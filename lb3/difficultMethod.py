@@ -41,10 +41,9 @@ class HashTable:
 
     def minusEven(self):
         for bucket in self.data:
-            for i, (key, value) in enumerate(bucket):
-                if value % 2 == 0:
+            for i in range(len(bucket) - 1, -1, -1):
+                if bucket[i][1] % 2 == 0:
                     del bucket[i]
-                    break
 def Main():
     N = 21*5+50
     S = N*0.75
