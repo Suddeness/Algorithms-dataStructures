@@ -19,7 +19,6 @@ def _sort_arr(array, type, el):
         while pastIndex >= 0 and value<array[pastIndex]:
             compare += 1
             array[pastIndex + 1] = array[pastIndex]
-
             pastIndex -= 1
         array[pastIndex + 1] = value
         assign += 1
